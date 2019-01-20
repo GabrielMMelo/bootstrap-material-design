@@ -7,16 +7,16 @@ Popper.Defaults.modifiers.computeStyle.gpuAcceleration = false
  *  which will be passed into each component, or you may omit use of this class and
  *  configure each component separately.
  */
-const BootstrapMaterialDesign = ($ => {
+BootstrapMaterialDesign = ($ => {
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
-  const NAME = "bootstrapMaterialDesign";
-  const DATA_KEY = `bmd.${NAME}`;
-  const JQUERY_NAME = NAME; // retain this full name since it is long enough not to conflict
-  const JQUERY_NO_CONFLICT = $.fn[JQUERY_NAME];
+  NAME = "bootstrapMaterialDesign";
+  DATA_KEY = `bmd.${NAME}`;
+  JQUERY_NAME = NAME; // retain this full name since it is long enough not to conflict
+  JQUERY_NO_CONFLICT = $.fn[JQUERY_NAME];
 
   /**
    * Global configuration:
@@ -30,7 +30,7 @@ const BootstrapMaterialDesign = ($ => {
    *
    *  @see each individual component for more configuration settings.
    */
-  const Default = {
+  Default = {
     global: {
       validate: false,
       label: {
